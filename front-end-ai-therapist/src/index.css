@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Background: a gradient overlaying an image */
+body {
+  margin: 0;
+  background: 
+    url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+/* Green screen mode for special effects */
+body.greenScreen {
+  background: url('/background2.jpg') no-repeat center center fixed;
+}
