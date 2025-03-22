@@ -58,8 +58,7 @@ app.post("/chat", async (req, res) => {
   conversationHistory.push(`User: ${userMessage}`);
 
   // Build the prompt including the conversation history.
-  const prompt = `
-You are a virtual professional therapist.
+  const prompt = `You are a virtual professional therapist.
 You will always reply with a JSON array of messages (max 3 messages).
 Each message has a "text", "facialExpression", and "animation" property.
 Available facial expressions: "smile" and "default".
